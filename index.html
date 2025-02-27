@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Our Team at Alyamamah Cafe</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --primary-color: #6b4423;
+        --secondary-color: #d4a574;
+        --text-color: #333;
+        --light-bg: #fff8f3;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        color: var(--text-color);
+        background: linear-gradient(to bottom, #f5f0e1, #e8e0d1);
+        margin: 0;
+        padding-top: 70px; /* Adjust for fixed navbar */
+      }
+
+      .hero {
+        position: relative;
+        min-height: 80vh;
+        background: url('https://source.unsplash.com/1600x900/?cafe,coffee')
+          no-repeat center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      .hero-content {
+        color: white;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-image {
+        /* max-width: 300px; */
+
+        margin: 2rem auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .section {
+        padding: 5rem 0;
+      }
+
+      .section-title {
+        color: var(--primary-color);
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+      }
+
+      .section-title::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: var(--secondary-color);
+        margin: 1rem auto;
+      }
+
+      .job-card {
+        background: white;
+        border-radius: 10px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .job-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .job-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+      }
+
+      .benefits-list,
+      .requirements-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .benefits-list li,
+      .requirements-list li {
+        padding: 0.5rem 0;
+        position: relative;
+        padding-left: 2rem;
+      }
+
+      .benefits-list li::before,
+      .requirements-list li::before {
+        content: '✓';
+        color: var(--secondary-color);
+        position: absolute;
+        left: 0;
+      }
+
+      .apply-section {
+        background: var(--primary-color);
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .apply-btn {
+        background: var(--secondary-color);
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 2rem;
+      }
+
+      .apply-btn:hover {
+        background: #bf8f5c;
+        transform: translateY(-2px);
+        color: white;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .section {
+          padding: 3rem 0;
+        }
+
+        .hero {
+          min-height: 60vh;
+        }
+
+        .job-card {
+          padding: 1.5rem;
+        }
+      }
+
+      .navbar {
+        background-color: rgba(107, 68, 35, 0.95) !important;
+      }
+
+      .navbar-brand img {
+        height: 40px;
+      }
+
+      .nav-link {
+        color: rgba(255, 255, 255, 0.9) !important;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: var(--secondary-color) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://yu.edu.sa/wp-content/themes/Yamamah%20University/images/yulogo.svg"
+            alt="Alyamamah Cafe Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jobs">Job Openings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apply">Apply Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Join Our Team at Alyamamah Cafe</h1>
+        <p class="lead">
+          Crafting exceptional coffee experiences in the heart of Riyadh
+        </p>
+        <img
+          src="https://cdn.salla.sa/form-builder/mk2PTduRxAoeuflxMKFlAmUFaTxbUq2DTe19m5ht.png"
+          class="hero-image img-fluid"
+          alt="Alyamamah Cafe"
+        />
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="text-center">
+              Alyamamah Cafe is dedicated to delivering top-tier customer
+              service and exceptional coffee experiences. Located in Riyadh, our
+              café serves as a welcoming space for coffee enthusiasts and food
+              lovers. As a startup, we believe that our team is our greatest
+              asset, and we are committed to fostering a collaborative and
+              growth-oriented environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Job Openings Section -->
+    <section id="jobs" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Current Job Openings</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="job-card">
+              <h3>Café Manager</h3>
+              <p>
+                Lead operations, oversee staff, and ensure an outstanding
+                customer experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="job-card">
+              <h3>Barista</h3>
+              <p>
+                Craft high-quality coffee beverages and provide excellent
+                service.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="job-card">
+              <h3>Kitchen Staff</h3>
+              <p>Prepare high-quality pastries and light meals.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="job-card">
+              <h3>Service Staff</h3>
+              <p>Engage with customers and ensure a welcoming atmosphere.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What We Offer</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <ul class="benefits-list">
+              <li>Competitive Salary – Based on experience and role</li>
+              <li>Training & Development – Gain hands-on experience</li>
+              <li>Career Growth – Opportunities to advance as we expand</li>
+              <li>
+                Supportive Team Culture – Work in a motivating environment
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="container my-5">
+      <h2 class="section-title">What We're Looking For</h2>
+      <ul>
+        <li>
+          Passion for coffee and hospitality – Previous experience is a plus but
+          not required for all roles.
+        </li>
+        <li>
+          Excellent communication and customer service skills – We value
+          friendly, proactive team players.
+        </li>
+        <li>
+          Ability to work in a fast-paced environment – The café industry
+          requires efficiency and adaptability.
+        </li>
+        <li>
+          Commitment to quality and teamwork – We foster a culture of continuous
+          learning and improvement.
+        </li>
+        <li>
+          For Baristas & Kitchen Staff: Prior experience in specialty coffee or
+          food preparation is a strong advantage.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Application Section -->
+    <section id="apply" class="apply-section">
+      <div class="container">
+        <h2 class="section-title text-white">Ready to Join Us?</h2>
+        <p>Email your CV to: <strong>career@alyamamahcafe.com</strong></p>
+        <p>Subject: [Position Name] – [Your Name]</p>
+        <a href="mailto:career@alyamamahcafe.com" class="apply-btn"
+          >Apply Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Email: <strong>contact@alyamamahcafe.com</strong></p>
+      <p>Phone: <strong>+966 123456789</strong></p>
+      <p>Address: <strong>Riyadh, Saudi Arabia</strong></p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
